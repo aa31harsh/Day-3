@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor Appointment Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .form-section {
+      flex: 1;
+      padding-left: 30px;
+    }
+
+    h2 {
+      text-align: center;
+      border-bottom: 2px solid maroon;
+      width: fit-content;
+      margin: 20px auto;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="time"],
+    textarea {
+      width: 100%;
+      padding: 6px;
+      margin-top: 4px;
+      box-sizing: border-box;
+    }
+
+    .name-fields {
+      display: flex;
+      gap: 10px;
+    }
+
+    .name-fields input {
+      flex: 1;
+    }
+
+    .address-fields {
+      display: flex;
+      gap: 10px;
+    }
+
+    .address-fields input {
+      flex: 1;
+    }
+
+    .gender {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 5px;
+    }
+
+    .checkboxes {
+      margin-top: 10px;
+    }
+
+    .checkboxes label {
+      display: block;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 8px 16px;
+    }
+
+    .image-left {
+      max-width: 350px;
+    }
+
+    .image-small {
+      margin-top: 20px;
+      float: right;
+      width: 200px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="C.jpg" alt="Doctor" class="image-left">
+    <div class="form-section">
+      <h2>Doctor Appointment Form</h2>
+      <form>
+        <label>Appointment Date</label>
+        <input type="date" required>
+
+        <label>Appointment Time</label>
+        <input type="time" required>
+
+        <label>Name</label>
+        <div class="name-fields">
+          <input type="text" placeholder="First" required>
+          <input type="text" placeholder="Last" required>
+        </div>
+
+        <label>Gender</label>
+        <div class="gender">
+          <input type="radio" name="gender" value="Male" required> Male
+          <input type="radio" name="gender" value="Female"> Female
+        </div>
+
+        <label>Phone</label>
+        <input type="tel" placeholder="#### ### ####" required>
+
+        <label>Address</label>
+        <div class="address-fields">
+          <input type="text" placeholder="City">
+          <input type="text" placeholder="State">
+        </div>
+
+        <label>Your Query</label>
+        <textarea rows="4"></textarea>
+
+        <label>Appointment Type</label>
+        <div class="checkboxes">
+          <label><input type="checkbox"> Cervix checkup</label>
+          <label><input type="checkbox"> Heart checkup</label>
+          <label><input type="checkbox"> Eye check-up</label>
+          <label><input type="checkbox"> Hearing Test</label>
+        </div>
+
+        <button type="submit">Send</button>
+      </form>
+</body
